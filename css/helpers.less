@@ -1,0 +1,48 @@
+// helper.less - functions for generating css snippets
+
+.text-shadow(@text-shadow:1px 1px 1px #D2D1D0){
+	text-shadow: @text-shadow;
+}
+
+.transition (@transition:all 0.3s ease-out){
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	-o-transition: @transition;  
+	transition: @transition; 
+}
+
+.animation(@animation){
+	-webkit-animation: @animation; 
+	-moz-animation: @animation; 
+	-o-animation: @animation; 
+	animation: @animation; 
+}
+
+// font scaling
+.font(@scale){
+	font-size: @scale * 16px;
+	font-size: @scale * 1rem;
+}
+
+// content box sizing
+.box-sizing(@boxmodel) {
+	-webkit-box-sizing: @boxmodel;
+	-moz-box-sizing: @boxmodel;
+	box-sizing: @boxmodel;
+}
+
+// custom box shadow
+.box-shadow(@shadowA, @shadowB:X, ...){
+	@props: ~`"@{arguments}".replace(/[\[\]]|\,\sX/g, '')`;
+	-webkit-box-shadow: @props;
+	-moz-box-shadow: @props;
+	box-shadow: @props;
+}
+
+// rounded border or shape
+.border-radius(@radius){
+	-webkit-border-radius:@radius;
+	-moz-border-radius:@radius;
+	border-radius:@radius;
+}
+
