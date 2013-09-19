@@ -1,0 +1,77 @@
+.content{
+	max-width: 900px;
+	margin:0 auto;
+}
+.logo-tx{
+	padding:1rem;
+	font-family: @3Dumb-font;
+	font-size: 4em;
+	color:@web-orange;
+	background: @azure;
+	text-shadow:1px 1px 1px @black,-1px -1px @cerise;
+	text-align: center;
+	@media screen and (min-width:500px){
+		text-align: left;
+		background: none;
+	}
+}
+.logo-description{
+	position: relative;
+	left:5rem;
+	top:-2rem;
+	font-size: 2rem;
+	font-family: @Sans-font;
+	color:@white;
+	text-shadow:1px 1px 2px @black,-1px -1px @web-orange;
+
+}
+.search-form-wrapper{
+	overflow: hidden;
+}
+.search-wrapper-item{
+	.search-label-tx,{
+		margin: 1em;
+		font-family: @Aleo-font;
+		color:@cerise;
+		font-weight: 700;
+	}
+	.search-input-tx{
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+		line-height: 1.5em;
+	}
+	.search-tip-tx{
+		margin-left: 1rem;
+		margin-top: 0.5rem;
+		font-size: 0.9rem;
+		font-family: @Sans-font;
+		color:darken(@natural-grey, 30%);
+	}
+	.submit-btn{
+		margin: 3em 1em 0;
+		padding:0.5em 1em;
+	}
+	@media screen and (min-width:500px){
+		width: 40%;
+		float: left;
+		&.btn-wrapper{
+			width: 20%;
+		}
+	}
+}
+.content-footer{
+	margin: 1em;
+	text-align: center;
+}
+.footer{
+	position: absolute;
+	left:0;
+	bottom: 0;
+	right:0;
+	margin:0 auto;
+	padding: 2em;
+	background: darken(@cerise, 10%);
+	text-align: center;
+	color:@white;
+}

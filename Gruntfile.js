@@ -7,7 +7,7 @@ module.exports = function(grunt){
 					yuicompress:false,
 				},
 				files:{
-					'css/main-<%= pkg.version %>-dev.css':'css/main.less',
+					'css/main-<%= pkg.version %>-dev.css':['bower_components/normalize-css/normalize.css','css/main.less']
 				}
 			},
 			product:{
@@ -15,7 +15,7 @@ module.exports = function(grunt){
 					yuicompress:true,
 				},
 				files:{
-					'public/asset/css/main-<%= pkg.version %>.css':'css/main.less'
+					'public/asset/css/main-<%= pkg.version %>.css':['bower_components/normalize-css/normalize.css','css/main.less']
 				}
 			}
 		},
